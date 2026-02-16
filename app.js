@@ -16,5 +16,14 @@ const allList = document.getElementsByTagName('li');
 console.log(allList);
 
 for(const item of allList){
-    console.log(item.innerText);
+    console.log(item);
 }
+
+// change some style 
+const logoStyle = document.getElementById('logo');
+logoStyle.style.fontWeight = 'bold';
+logoStyle.style.color = '#d80000';
+logoStyle.style.padding = '5px 10px';
+logoStyle.style.borderRadius = '5px';
+logoStyle.style.backgroundColor = '#160000';
+
