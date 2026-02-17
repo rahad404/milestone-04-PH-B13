@@ -66,3 +66,18 @@ newAnimeSection.appendChild(newAnimeUl);
 
 //      3.append element to parent eement
 main.appendChild(newAnimeSection);
+
+//----------<write raw html>------------
+// add new elemnt with java script 2
+const imdbSection = document.createElement('section');
+
+imdbSection.innerHTML = `
+    <br>
+    <h1>IMDB Top 3</h1>
+    <ul>
+        <li>Fullmetal Alchemist</li>
+        <li>Attack on Titan</li>
+        <li>Death Note</li>
+    </ul>
+`
+main.appendChild(imdbSection);
