@@ -33,3 +33,36 @@ newAnime.innerText = "Monster";
 
 const animeList = document.getElementById('anime-list');
 animeList.appendChild(newAnime);
+
+//-------------<new element>---------------
+// add new elemnt with java script 2
+//      1.get parent element
+const main = document.querySelector('main');
+
+//      2.create element to add
+const newAnimeSection = document.createElement('section');
+
+//      --> create element for section
+const newAnimeH1 = document.createElement('h1');
+newAnimeH1.innerText = 'New Released Anime';
+
+const newAnimeUl = document.createElement('ul');
+
+const li1 = document.createElement('li');
+li1.innerText = 'Chainsaw Man';
+const li2 = document.createElement('li');
+li2.innerText = 'Sakamoto Days';
+const li3 = document.createElement('li');
+li3.innerText = 'Dan Da Dan';
+
+newAnimeUl.appendChild(li1);
+newAnimeUl.appendChild(li2);
+newAnimeUl.appendChild(li3);
+
+//      --> add element to section
+newAnimeSection.appendChild(document.createElement('br'));
+newAnimeSection.appendChild(newAnimeH1);
+newAnimeSection.appendChild(newAnimeUl);
+
+//      3.append element to parent eement
+main.appendChild(newAnimeSection);
