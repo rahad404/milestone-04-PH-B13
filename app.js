@@ -27,3 +27,9 @@ logoStyle.style.padding = '5px 10px';
 logoStyle.style.borderRadius = '5px';
 logoStyle.style.backgroundColor = '#160000';
 
+// add new elemnt with java script 
+const newAnime = document.createElement('li');
+newAnime.innerText = "Monster";
+
+const animeList = document.getElementById('anime-list');
+animeList.appendChild(newAnime);
